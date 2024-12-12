@@ -23,6 +23,23 @@ class database
 
     }
 
+    // Método para criar uma conexão ao banco de dados
+
+    public function connect()
+    {
+        $this->conn = new mysqli($this->severname,$this->user,$this->password,$this->dbname);
+
+        return $this->conn;
+    }
+
+    // Método para fechar uma conexão do banco de dados
+    public function closeConnection()
+    {
+      if($this->conn){
+        $this->conn->close(;)
+      }
+    }
+
 }
 
 ?>
