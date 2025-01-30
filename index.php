@@ -130,4 +130,38 @@
     </div>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'footer.php'; 
+
+include_once __DIR__ . '/app/cliente/Cliente.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST')
+{
+
+    $cliente = new Cliente(null,$_POST['nome'],$_POST["telefone"],$_POST["email"],$_POST["senha"],);
+
+    if ($cliente->cadastrar())
+    {
+        echo "Cliente cadastrado com sucesso!";
+    }
+    else {
+        echo "Erro ao cadastrar o cliente!";
+    }
+
+
+
+}
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+?>

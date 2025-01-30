@@ -1,44 +1,45 @@
 <?php
 
-include_once __DIR__ . '../../config/config.php'; 
+include_once __DIR__ . '/../../config/config.php';
 
-class database 
+class Database
 {
+
     private $servername;
     private $user;
     private $password;
     private $dbname;
-    private $conn;
+    private $connection;
 
+    // Método construtor
 
-    //Método construtor
-
-    public function_construct()
+    public function __construct()
     {
-    
-          $this->servername = DB_HOST;
-          $this->user = DB_USER;
-          $this->password = DB_PASSWORD;
-          $this->dbname = DB_NAME;
-
+        $this->servername = DB_HOST;
+        $this->user = DB_USER;
+        $this->password = DB_PASSWORD;
+        $this->dbname = DB_NAME;  
     }
 
-    // Método para criar uma conexão ao banco de dados
 
+    // Método para criar uma conexão com o banco de dados
     public function connect()
     {
-        $this->conn = new mysqli($this->severname,$this->user,$this->password,$this->dbname);
+        $this->connection = new mysqli($this->servername,$this->user,$this->password,$this->dbname);
 
-        return $this->conn;
+        return $this->connection;
     }
 
     // Método para fechar uma conexão do banco de dados
     public function closeConnection()
     {
-      if($this->conn){
-        $this->conn->close(;)
-      }
+        if ($this->connection){
+            $this->connection->close();
+        }
+
     }
+
+
 
 }
 
