@@ -124,20 +124,16 @@ h1 {
 </head>
 
 <body>
-        <form action="welcome.php" method="POST">
-    Nome: <input type="text" name="name" required><br>
-    E-mail: <input type="email" name="email" required><br>
-    <input type="submit" value="Enviar">
-        </form>
+        
     <div class="container">
         <h1>Entrar na Pet Love</h1>
-        <form>
+        <form action="busca.php" method="POST">
             <div class="input-container">
-                <input placeholder="Email" type="email" required>
+                <input placeholder="email" type="email" required name ="email">
                 <img width="30" height="30" src="https://img.icons8.com/material-outlined/24/user--v1.png" alt="user--v1">
             </div>
             <div class="input-container">
-                <input placeholder="Senha" type="password" required>
+                <input placeholder="senha" type="senha"  name ="senha"required>
                 <img width="30" height="30" src="https://img.icons8.com/ios/50/lock--v1.png" alt="lock--v1">
             </div>
             <a href="#">Esqueci minha senha</a>

@@ -25,6 +25,7 @@
                         <li><a href="sobre.php">Sobre</a></li>
                         <li><a href="servicos.php">Serviços</a></li>
                         <li><a href="contato.php">Contato</a></li>
+                        <li><a href="cadastro.php">Cadastro</a></li>
                         <li><a href="login.php"><button class="btn-gradient">Login</button></a></li>
                     </ul>
                 </nav>
