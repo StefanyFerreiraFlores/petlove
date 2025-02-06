@@ -11,12 +11,12 @@ class Cliente {
     private $senha;
 
     // Métodos construtor
-    public function __ construct($id, $nome, $telefone, $email, $senha)
+    public function __construct($id, $nome, $telefone, $email, $senha)
     {
         $this->id = $id;
         $this->nome =$nome;
         $this->telefone = $telefone;
-        $this->email = $email
+        $this->email = $email;
         $this->senha = $senha;
     }
 

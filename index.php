@@ -132,7 +132,7 @@
 
 <?php include 'footer.php'; 
 
-include_once __DIR__ . '/app/cliente/Cliente.php';
+include_once __DIR__ . '/agenda/app/cliente/Cliente.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST')
 {
